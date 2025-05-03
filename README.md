@@ -1,4 +1,3 @@
-# CSC375FinalProject
 # Faster R-CNN on COCO 2017: Reproducibility & Evaluation
 
 ## Project Overview
@@ -7,7 +6,6 @@ This project evaluates the performance of the Faster R-CNN model with a ResNet-5
 
 * Reproduce inference performance using a pretrained model.
 * Test generalization of the model to a newer dataset (COCO 2017).
-* Compare detection accuracy and runtime efficiency with YOLOv8.
 
 ---
 
@@ -65,23 +63,6 @@ Final_Project/
 
 * Confidence score histogram of all predictions
 * Top-20 classes by AP (bar chart)
-
----
-
-## Comparison with YOLOv8
-
-* YOLOv8n inference performed using `ultralytics` package
-* COCO 2017 val images tested for 100 samples
-
-| Model        | mAP@\[0.5:0.95] | Inference Time (s/image) |
-| ------------ | --------------- | ------------------------ |
-| Faster R-CNN | 0.370           | 0.0575                   |
-| YOLOv8n      | \~0.45          | \~0.014                  |
-
-### Takeaways:
-
-* YOLOv8 offers significantly faster inference
-* Faster R-CNN still performs competitively on accuracy, especially for medium and large objects
 
 ---
 
